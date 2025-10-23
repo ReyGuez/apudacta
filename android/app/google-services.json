@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387505969547",
+    "project_id": "apudacta-65129",
+    "storage_bucket": "apudacta-65129.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387505969547:android:b4ac881501d89788b4f78e",
+        "android_client_info": {
+          "package_name": "com.apudacta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP2nv0LP4STVz5DrKEK1Fd-5w_Izpdck0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
