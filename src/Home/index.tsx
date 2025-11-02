@@ -25,6 +25,8 @@ const Home = () => {
   useEffect(() => {
     const unsubscribe = messaging().onMessage(async remoteMessage => {
       console.log('remoteMessage', remoteMessage);
+      delete remoteMessage?.mutableContent;
+      delete remoteMessage?.contentAvailable;
       onDisplayNotification(remoteMessage);
     });
 
@@ -80,6 +82,10 @@ const Home = () => {
         pressAction: {
           id: Values.pressAction,
         },
+      },
+      ios: {
+        categoryId: 'default',
+        sound: 'default',
       },
     });
   }

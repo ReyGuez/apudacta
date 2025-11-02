@@ -12,6 +12,9 @@ import { Values } from './src/Helpers/Values';
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('📩 FCM recibido en background:', remoteMessage);
 
+  delete remoteMessage?.mutableContent;
+  delete remoteMessage?.contentAvailable;
+
   const dataPayload = remoteMessage?.data || {};
 
   const channelId = await notifee.createChannel({

@@ -33,7 +33,7 @@ const RootStack = () => {
         options={{
           headerShown: false,
           cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
-          gestureEnabled: false,
+          gestureEnabled: true,
         }}
       />
       <Stack.Screen
@@ -42,7 +42,7 @@ const RootStack = () => {
         options={{
           headerShown: false,
           cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
-          gestureEnabled: false,
+          gestureEnabled: true,
         }}
       />
     </Stack.Navigator>
